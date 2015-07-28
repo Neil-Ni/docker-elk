@@ -10,6 +10,7 @@ logstash:
   ports:
     - "5000:5000"
   links:
+    - rabbitmq
     - elasticsearch
 kibana:
   build: kibana/
